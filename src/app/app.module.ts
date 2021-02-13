@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FilterPipe } from './filter.pipe';
+import { JoinPipe } from './join.pipe';
 import { StudentsModule } from './modules/students/students.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilterPipe
+    FilterPipe,
+    JoinPipe
   ],
   imports: [
     BrowserModule,
