@@ -5,8 +5,13 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 export class FilterPipe implements PipeTransform {
     transform(studs, filterStr) {
-        return studs.filter(s => {
-            return s.name.includes(filterStr)
+        console.log('filterPipe',studs);
+        console.log('filterPipe',filterStr);
+        const fios: string[] = studs.map(s => s.split(",",1)[0]);
+        console.log('filterPipe',fios);
+
+        return fios.filter(fio => {
+            return fio.includes(filterStr)
         })
     }
 }

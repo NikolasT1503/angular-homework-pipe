@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-students-comp',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentsCompComponent implements OnInit {
 
-  students: string[] = ['Иванов Иван Иванович, 35, 5', 'Петров Петр Петрович, 28, 3', 'Сидоров Сидр Сидорович, 43, 4'];
-
+  @Input() student: string;
+  @Input() ind: number;
   tdClass: object = {'td': true};
 
   constructor() { }

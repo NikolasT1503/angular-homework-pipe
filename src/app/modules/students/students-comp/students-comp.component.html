@@ -1,5 +1,12 @@
-<tr *ngFor="let student of (students); let i = index">
+<!-- <tr *ngFor="let student of (students); let i = index">
     <td class="td">{{i+1}}</td>
+    <td class="td">{{student|splitstr : 0}}</td>
+    <td class="td">{{student|splitstr : 1}}</td>
+    <td [ngClass]="tdClass">{{student|splitstr : 2}}</td>
+</tr>
+ -->
+<tr>
+    <td class="td">{{ind+1}}</td>
     <td class="td">{{student|splitstr : 0}}</td>
     <td class="td">{{student|splitstr : 1}}</td>
     <td [ngClass]="tdClass">{{student|splitstr : 2}}</td>
