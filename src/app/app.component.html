@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="input-field col s6">
+    <input id="first_name" class="validate" [(ngModel)]="filterStr">
+    <label class="active" for="first_name">Поиск по ФИО</label>
+  </div>
+</div>
+
+<p>{{title.split("-",1)}}</p>
+
+<table>
+  <tr>
+    <th>№ п/п</th>
+    <th>ФИО студента</th>
+    <th>Возраст</th>
+    <th>Оценка</th>
+  </tr>
+  <div class="row">
+    <app-students-comp></app-students-comp>
+<!--       *ngFor="let s of students | filter:filterStr" 
+      [student]="s"> 
+
+    </app-students-comp> -->
+
+  </div>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    
+  </tr>
+  <tr>
+    
+  </tr>
+</table>
